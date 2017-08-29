@@ -2,7 +2,7 @@ A tiny python module containing helpful wrappers around the built-in `re` module
 
 ## Example:
 
-```python3
+```python
 >>> import regget
 >>> regget.first_group_or_none("CO-(\d+)", "CO-43")
 "43"
