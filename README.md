@@ -13,7 +13,7 @@ None
 >>>
 >>> from functools import partial
 >>> PATTERN = "CO-(\d+)"
->>> grab_number = partial(regget.first_group_or_none(PATTERN))
+>>> grab_number = partial(regget.first_group_or_none, PATTERN)
 >>> document_names = ["CO-3", "CO-9", "CO-12"]
 >>> valid_numbers = [grab_number(s) for s in document_names]
 >>> print(valid_numbers)
